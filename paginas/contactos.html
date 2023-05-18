@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="ico/favicon-16x16.png">
+    <link rel="manifest" href="ico/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+    <title>
+      Contactarnos
+    </title>
+</head>
+<body>
+<!-- Header -->
+<header>Real People Inc
+  <img class="logo" src="../imgs/logo.png" alt="Logo">
+  <ul class="contactos-header">
+    <li><a href="https://twitter.com" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a></li>
+    <li><a href="https://www.facebook.com/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></li>
+    <li><a href="https://www.instagram.com" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+  </ul>
+</header>
+<!-- Menu de navegacion -->
+<nav class="menu">
+  <ul>
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="acercade.html">Sobre nosotros</a></li>
+    <li><a href="sedes.html">Sedes</a></li>
+    <li><a href="contactos.html">Contactanos</a></li>
+    <li><a href="soporte.html">FAQ</a></li>
+    <li class="cuentas">
+      <a>Tu cuenta</a>
+      <ul class="cuentas-menu">
+        <li><a href="cuenta.html">Perfil</a></li>
+        <li><a href="cuenta.html">Crear cuenta</a></li>
+        <li><a href="cuenta.html">Log In</a></li>
+      </ul>
+  </ul>
+</nav>
+<!-- Formulario de contacto -->
+<main> 
+  <div>
+    <form class="formulario container-lg" action="">
+      <h2>Deja tu info aqui</h2>
+      <div class="control">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required>
+      </div>
+      <div class="control">
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+      </div>
+      <div class="control">
+        <label for="comentarios">Comentarios</label>
+        <textarea id="comentarios" rows="5" required></textarea>
+      </div>
+      <div class="control">
+        <span>
+      <div>
+        <label for="genero">Genero (Opcional)</label>
+      </div>
+      <label>
+                <input type="radio" name="gender" value="masculino">
+                Masculino
+              </label>
+              <label>
+                <input type="radio" name="gender" value="femenino">
+                Femenino
+              </label>
+        </span>
+        </div>
+        <div class="control">
+          <label for="razon">Razon:</label>
+          <select id="razon" required>
+            <option value="">--Selecciona una razon--</option>
+            <option value="general">Consulta General</option>
+            <option value="feedback">Feedback</option>
+            <option value="support">Soporte</option>
+          </select>
+        </div>
+        <button type="submit">Enviar</button>
+        <h3>Otros medios de contacto
+        <ul class="social-media">
+          <div>
+          <li><a href="https://twitter.com" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a></li>
+          <li><a href="https://www.facebook.com/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></li>
+          <li><a href="https://www.instagram.com" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+          <li><a href="tel:+54 123-123-126"><ion-icon name="call-outline"></ion-icon></a></li>
+          <li><a href="mailto:real.people.incorp@gmail.com"><ion-icon name="mail-outline"></ion-icon></a></li>
+          </div>
+        </ul>
+    </form>
+</main>
+<!-- Footer -->
+<footer>
+  <p>&copy; 2023 Real People Inc. Todos los derechos reservados.</p>
+</footer class="container-lg">
+<div>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</div>
+</body>
+</html>

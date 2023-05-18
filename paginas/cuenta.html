@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="ico/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="ico/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="ico/favicon-16x16.png">
+  <link rel="manifest" href="ico/site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+  <title>
+    Sobre nosotros
+  </title>
+</head>
+<body>
+<!-- Header -->
+    <header>Real People Inc
+      <img class="logo" src="../imgs/logo.png" alt="Logo">
+      <ul class="contactos-header">
+        <li><a href="https://twitter.com" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a></li>
+        <li><a href="https://www.facebook.com/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></li>
+        <li><a href="https://www.instagram.com" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+      </ul>
+    </header>
+<!-- Menu de navegacion -->
+      <nav class="menu">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="acercade.html">Sobre nosotros</a></li>
+          <li><a href="sedes.html">Sedes</a></li>
+          <li><a href="contactos.html">Contactanos</a></li>
+          <li><a href="soporte.html">FAQ</a></li>
+          <li class="cuentas">
+            <a>Tu cuenta</a>
+            <ul class="cuentas-menu">
+              <li><a href="cuenta.html">Perfil</a></li>
+              <li><a href="cuenta.html">Crear cuenta</a></li>
+              <li><a href="cuenta.html">Log In</a></li>
+            </ul>
+        </ul>
+      </nav>
+<!-- Formulario de login o crear cuenta(Sin completar el de login) -->
+<main>
+  <form class="logear" action="">
+    <h2>Crear cuenta o Logear</h2>
+      <div class="control">
+        <label for="nombre">Nombre de usuario:</label>
+        <input type="text" id="nombre" required>
+      </div>
+      <div class="control">
+          <label for="email">Email:</label>
+          <input type="email" id="email" required>
+      </div>
+      <div class="control">
+          <label for="contrasena">Contraseña</label>
+          <input type="password" name="contrasena" id="">
+      </div>
+      <div class="control">
+      <span>
+        <div>
+          <label for="genero">Genero (Opcional)</label>
+        </div>
+        <label>
+          <input type="radio" name="genero" value="masculino">
+          Masculino
+        </label>
+              <label>
+                <input type="radio" name="genero" value="femenino">
+                Femenino
+              </label>
+        </span>
+        </div>
+        <button type="submit">Crear</button>
+          <p>Ya tienes una cuenta? <a href="#" id="signup-link">Logear</a></p>
+        </div>
+  </form>
+</main>
+<!-- Footer -->
+<footer>
+ <p>&copy; 2023 Real People Inc. Todos los derechos reservados.</p>
+</footer>
+<div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</div>
+</body>
+</html>
