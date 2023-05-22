@@ -280,6 +280,20 @@ body {
   width: 50%;
 padding: 5px;
 }
+.zonas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+.zonas-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.zonas-item img {
+  max-width: 100%;
+}
 /* Preguntas frecuentes */
 #FAQ {
   max-width: 800px;
@@ -395,7 +409,7 @@ right: 1px;
   margin-bottom: 10px;
   font-size: 15px;
 }
-.footer p {
+.footer {
   font-size: 10px;
 }
 }
@@ -413,7 +427,6 @@ right: 1px;
 .contactos-header {
 right: 1px;
 }
-
 .menu ul {
   display: grid;
   justify-content: space-between;
@@ -422,13 +435,20 @@ right: 1px;
   padding: 3px;
   font-size: 10px;
 }
-
 .menu ul li {
   margin-right: 0;
   margin-bottom: 10px;
   font-size: 13px;
 }
+
 .footer {
   font-size: 8px;
 }
+
+}
+
+@media (max-width: 768px) { 
+  .zonas {
+    grid-template-columns: 1fr;
+  }
 }
