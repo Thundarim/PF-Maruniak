@@ -14,10 +14,11 @@ header {
   font-family: "Courier New", Courier, monospace;
   font-style: italic;
   text-align: left;
+  background-color: #333;
   color: #FFF;
   padding: 10px;
   font-size: 28px;
-  background: linear-gradient(360deg, rgb(51, 51, 51) 17%, rgb(56, 56, 56) 49%, rgb(78, 41, 20) 100%);
+  /* Parte de contactos */
 }
 header .contactos-header {
   position: absolute;
@@ -61,7 +62,6 @@ body {
   max-width: 960px;
   margin: 10px auto;
   padding: 15px;
-  animation: fallIn 1.5s ease-in-out;
 }
 .home h3 {
   font-family: "Quicksand-regular";
@@ -119,7 +119,6 @@ body {
   width: 100%;
   box-shadow: 0 5px 6px black;
   z-index: 100;
-  background: linear-gradient(180deg, rgb(51, 51, 51) 17%, rgb(56, 56, 56) 49%, rgb(78, 41, 20) 100%);
 }
 .menu ul {
   list-style: none;
@@ -127,25 +126,28 @@ body {
   justify-content: space-between;
   background-color: #444;
   padding: 10px;
-  background: linear-gradient(360deg, rgba(51, 51, 51, 0) 17%, rgb(56, 56, 56) 49%, rgb(50, 50, 50) 100%);
 }
 .menu ul li {
   margin-right: 20px;
   font-size: large;
 }
 .menu ul li a {
-  color: #fff;
+  color: #FFF;
   text-decoration: none;
   font-family: "Roboto Mono", monospace;
 }
-.menu ul li a:hover {
+.menu ul li a :hover {
   text-decoration: none;
 }
-.menu .cuentas {
+
+.cuentas {
   position: relative;
   /* Dropdown de perfil */
 }
-.menu .cuentas-menu {
+.cuentas :hover .cuentas-menu {
+  display: grid;
+}
+.cuentas .cuentas-menu {
   position: absolute;
   top: 100%;
   right: 0;
@@ -154,12 +156,9 @@ body {
   padding: 10px;
   display: none;
 }
-.menu .cuentas-menu a {
+.cuentas .cuentas-menu a {
   border-bottom: 1px solid #ccc;
   padding-bottom: 2px;
-}
-.menu .cuentas:hover .cuentas-menu {
-  display: grid;
 }
 
 /* Parte del body */
@@ -177,7 +176,6 @@ body {
   padding: 20px;
   background-color: #cfcece;
   box-shadow: inset 0px 5px 10px #222222;
-  animation: fallIn 1.5s ease-in-out;
 }
 .bodyacerca section {
   margin-bottom: 40px;
@@ -206,15 +204,13 @@ body {
   border: 5px solid black;
   border-radius: 50%;
   margin-bottom: 10px;
-  animation: fallIn 1.5s ease-in-out;
-  animation-delay: 0.5s;
 }
-.bodyacerca img h3 {
+.bodyacerca h3 {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 5px;
 }
-.bodyacerca img p {
+.bodyacerca p {
   font-size: 18px;
   margin-bottom: 10px;
 }
@@ -226,7 +222,6 @@ body {
   padding: 20px;
   background-color: #cfcece;
   box-shadow: inset 0px 5px 10px #222222;
-  animation: fallIn 1.5s ease-in-out;
 }
 .formulario h2 {
   margin-top: 0;
@@ -281,7 +276,6 @@ body {
   background-color: #cfcece;
   box-shadow: inset 0px 5px 10px #333;
   font-family: "Quicksand-regular";
-  animation: fallIn 1.5s ease-in-out;
 }
 .ubicaciones ul {
   list-style-type: none;
@@ -313,10 +307,6 @@ body {
 .zonas-item img {
   max-width: 100%;
 }
-.zonas-item img:hover {
-  width: 475%;
-  transition: width 2s 0.5s;
-}
 
 /* Preguntas frecuentes */
 #FAQ {
@@ -325,7 +315,6 @@ body {
   padding: 40px;
   background-color: #cfcece;
   box-shadow: inset 0px 5px 10px #333;
-  animation: fallIn 1.5s ease-in-out;
 }
 #FAQ h2 {
   font-size: 24px;
@@ -353,7 +342,6 @@ body {
   padding: 40px;
   background-color: #cfcece;
   box-shadow: inset 0px 5px 10px #333;
-  animation: fallIn 1.5s ease-in-out;
 }
 .logear label {
   display: block;
@@ -473,22 +461,6 @@ footer {
 @media (max-width: 768px) {
   .zonas {
     grid-template-columns: 1fr;
-  }
-}
-@keyframes fallIn {
-  0% {
-    transform: translateX(-200%);
-    opacity: 0;
-  }
-  60% {
-    transform: translateY(0);
-  }
-  80% {
-    transform: translateY(-20px);
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
   }
 }
 
