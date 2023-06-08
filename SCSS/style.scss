@@ -41,13 +41,6 @@
       left: 270px;
       width: 50px;
       height: 50px;
-  }  
-  body {
-    grid-area: body;
-      font-family:  Arial, sans-serif;
-      font-size: 16px;
-      line-height: 1.5;
-      background-color: #F0F0F0;
   }
   /* Home */
   .home {
@@ -89,7 +82,6 @@
       font-size: 36px;
       margin-bottom: 20px;
   }
-    
   .productos {
     grid-area: productos;
       font-size: 24px;
@@ -114,7 +106,6 @@
     box-shadow: 0 5px 6px black;
     z-index: 100;
     background: linear-gradient(180deg, rgb(51 51 51) 17%, rgb(56 56 56) 49%, rgb(78 41 20) 100%);
-  
     ul {
       list-style: none;
       display: flex;
@@ -122,23 +113,19 @@
       background-color: #444;
       padding: 10px;
       background: linear-gradient(360deg, rgb(51 51 51 / 0%) 17%, rgb(56 56 56) 49%, rgb(50 50 50) 100%);
-  
       li {
         margin-right: 20px;
         font-size: large;
-  
         a {
           color: #fff;
           text-decoration: none;
           font-family: 'Roboto Mono', monospace;
-  
           &:hover {
             text-decoration: none;
           }
         }
       }
     }
-  
     .cuentas {
       position: relative;
   
@@ -151,14 +138,11 @@
         border: 1px solid #747272;
         padding: 10px;
         display: none;
-        
-  
         a {
           border-bottom: 1px solid #ccc;
           padding-bottom: 2px;
         }
       }
-  
       &:hover {
         .cuentas-menu {
           display: grid;
@@ -166,7 +150,6 @@
       }
     }
   }
-  
   /* Parte del body */
   body {
       font-family: Arial, sans-serif;
@@ -292,7 +275,6 @@ label {
     padding: 5px;
     }
   }
-  .ubicaciones 
   .ubicacion {
     display: block;
     width: auto;
@@ -346,7 +328,6 @@ label {
       }
     }
   }
-
   /* Parte de login o sign up */
   .logear {
     max-width: 800px;
@@ -402,7 +383,6 @@ label {
       box-shadow: 0 5px 10px black;
       margin-bottom: 0;
   }
-  
   /*Media queries */
   @media (max-width: 480px) 
   /* tamaño Header */
@@ -438,7 +418,6 @@ label {
     }
   }
 }
-  
   .footer {
     font-size: 10px;
   }
@@ -482,7 +461,7 @@ label {
       grid-template-columns: 1fr;
     }
   }
-  // Animaciones
+  /* Animaciones */
   @keyframes fallIn {
     0% {
       transform: translateX(-200%);
