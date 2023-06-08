@@ -1,0 +1,78 @@
+  /*Media queries */
+  @media (max-width: 480px) 
+  /* tamaño Header */
+  {   
+    header {
+    display: grid;
+    text-align: left;
+    font-size: 20px;
+  }
+  /* posicion del logo */
+  .logo {
+    display: flex;
+    left: 204px;
+    height: auto;
+  }
+  /* posicion de los contactos */
+  .contactos-header {
+  right: 1px;
+  }
+  /* Grid del menu */
+  .menu  { ul{
+    display: grid;
+    justify-content: space-between;
+    flex-direction: column;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+    font-size: 9px;
+    margin: -10px;
+    li {
+      margin-right: 0;
+      margin-bottom: 10px;
+      font-size: 15px;
+    }
+  }
+}
+  .footer {
+    font-size: 10px;
+  }
+  }
+  @media (max-width: 321px) {   
+    header {
+    display: grid;
+    text-align: left;
+    font-size: 18px;
+  }
+  .logo {
+    display: flex;
+    left: 180px;
+    height: auto;
+  }
+  .contactos-header {
+  right: 1px;
+  }
+  .menu  { ul{
+    display: grid;
+    justify-content: space-between;
+    flex-direction: column;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 3px;
+    font-size: 10px;
+    li {
+      margin-right: 0;
+      margin-bottom: 10px;
+      font-size: 13px;
+    }
+  }
+}
+  .footer {
+    font-size: 8px;
+  }
+  
+  }
+  
+  @media (max-width: 768px) { 
+    .zonas {
+      grid-template-columns: 1fr;
+    }
+  }

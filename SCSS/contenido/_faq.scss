@@ -1,0 +1,27 @@
+  /* Preguntas frecuentes */
+  #FAQ {
+    max-width: 800px;
+    margin: 15px auto;
+    padding: 40px;
+    background-color: #cfcece;
+    box-shadow: inset 0px 5px 10px #333;
+    animation: fallIn 1.5s ease-in-out;
+    h2 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 40px;
+      margin-bottom: 16px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+    a {
+      color: #007aff;
+      text-decoration: none;
+      :hover {
+        text-decoration: underline;
+      }
+    }
+  }

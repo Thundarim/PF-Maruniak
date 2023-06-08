@@ -1,0 +1,44 @@
+  /* Parte del sitio "sedes" */
+  .ubicaciones {
+    max-width: auto;
+    margin: 15px auto;
+    padding: 40px;
+    background-color: #cfcece;
+    box-shadow: inset 0px 5px 10px #333;
+    font-family: "Quicksand-regular";
+    animation: fallIn 1.5s ease-in-out;
+    ul {
+      list-style-type: none;
+      font-weight: 100;
+    }
+    img {
+      width: 50%;
+    padding: 5px;
+    }
+  }
+  .ubicacion {
+    display: block;
+    width: auto;
+    height: auto;
+  }
+  
+  .zonas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  .zonas-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  
+    img {
+      max-width: 100%;
+  
+      &:hover {
+        width: 475%;
+        transition: width 2s .5s;
+      }
+    }
+}
