@@ -45,12 +45,65 @@ header .contactos-header li {
   height: 50px;
 }
 
+/* Parte del body */
 body {
-  grid-area: body;
   font-family: Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   background-color: #F0F0F0;
+}
+
+/* Parte del navbar */
+.menu {
+  grid-area: menu;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 5px 6px black;
+  z-index: 100;
+  background: linear-gradient(180deg, rgb(51, 51, 51) 17%, rgb(56, 56, 56) 49%, rgb(78, 41, 20) 100%);
+}
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  background-color: #444;
+  padding: 10px;
+  background: linear-gradient(360deg, rgba(51, 51, 51, 0) 17%, rgb(56, 56, 56) 49%, rgb(50, 50, 50) 100%);
+}
+.menu ul li {
+  margin-right: 20px;
+  font-size: large;
+}
+.menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Roboto Mono", monospace;
+}
+.menu ul li a:hover {
+  text-decoration: none;
+}
+.menu .cuentas {
+  position: relative;
+  /* Dropdown de perfil */
+}
+.menu .cuentas-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #444;
+  border: 1px solid #747272;
+  padding: 10px;
+  display: none;
+}
+.menu .cuentas-menu a {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 2px;
+}
+.menu .cuentas:hover .cuentas-menu {
+  display: grid;
 }
 
 /* Home */
@@ -107,67 +160,6 @@ body {
   max-width: 100%;
   height: auto;
   margin-bottom: 10px;
-}
-
-/* Parte del navbar */
-.menu {
-  grid-area: menu;
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  left: 0;
-  width: 100%;
-  box-shadow: 0 5px 6px black;
-  z-index: 100;
-  background: linear-gradient(180deg, rgb(51, 51, 51) 17%, rgb(56, 56, 56) 49%, rgb(78, 41, 20) 100%);
-}
-.menu ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  background-color: #444;
-  padding: 10px;
-  background: linear-gradient(360deg, rgba(51, 51, 51, 0) 17%, rgb(56, 56, 56) 49%, rgb(50, 50, 50) 100%);
-}
-.menu ul li {
-  margin-right: 20px;
-  font-size: large;
-}
-.menu ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-family: "Roboto Mono", monospace;
-}
-.menu ul li a:hover {
-  text-decoration: none;
-}
-.menu .cuentas {
-  position: relative;
-  /* Dropdown de perfil */
-}
-.menu .cuentas-menu {
-  position: absolute;
-  top: 100%;
-  right: 0;
-  background-color: #444;
-  border: 1px solid #747272;
-  padding: 10px;
-  display: none;
-}
-.menu .cuentas-menu a {
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 2px;
-}
-.menu .cuentas:hover .cuentas-menu {
-  display: grid;
-}
-
-/* Parte del body */
-body {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  background-color: #F0F0F0;
 }
 
 /* Parte del contenido de sobre nosotros */
@@ -273,6 +265,50 @@ body {
   list-style-type: none;
 }
 
+/* Parte de login o sign up */
+.logear {
+  max-width: 800px;
+  margin: 15px auto;
+  padding: 40px;
+  background-color: #cfcece;
+  box-shadow: inset 0px 5px 10px #333;
+  animation: fallIn 1.5s ease-in-out;
+}
+.logear label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.logear input[type=text],
+.logear input[type=email],
+.logear input[type=password] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.logear button[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.logear button[type=submit]:hover {
+  background-color: #45a049;
+}
+.logear a {
+  color: #1e90ff;
+  text-decoration: none;
+}
+.logear a :hover {
+  text-decoration: underline;
+}
+
 /* Parte del sitio "sedes" */
 .ubicaciones {
   max-width: auto;
@@ -292,7 +328,7 @@ body {
   padding: 5px;
 }
 
-.ubicaciones .ubicacion {
+.ubicacion {
   display: block;
   width: auto;
   height: auto;
@@ -346,50 +382,6 @@ body {
   text-decoration: underline;
 }
 
-/* Parte de login o sign up */
-.logear {
-  max-width: 800px;
-  margin: 15px auto;
-  padding: 40px;
-  background-color: #cfcece;
-  box-shadow: inset 0px 5px 10px #333;
-  animation: fallIn 1.5s ease-in-out;
-}
-.logear label {
-  display: block;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-.logear input[type=text],
-.logear input[type=email],
-.logear input[type=password] {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-.logear button[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-right: 10px;
-}
-.logear button[type=submit]:hover {
-  background-color: #45a049;
-}
-.logear a {
-  color: #1e90ff;
-  text-decoration: none;
-}
-.logear a :hover {
-  text-decoration: underline;
-}
-
 footer {
   background-color: #1e1e1e;
   position: fixed;
@@ -403,6 +395,23 @@ footer {
   margin-bottom: 0;
 }
 
+/* Animaciones */
+@keyframes fallIn {
+  0% {
+    transform: translateX(-200%);
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(0);
+  }
+  80% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 /*Media queries */
 @media (max-width: 480px) {
   header {
@@ -473,22 +482,6 @@ footer {
 @media (max-width: 768px) {
   .zonas {
     grid-template-columns: 1fr;
-  }
-}
-@keyframes fallIn {
-  0% {
-    transform: translateX(-200%);
-    opacity: 0;
-  }
-  60% {
-    transform: translateY(0);
-  }
-  80% {
-    transform: translateY(-20px);
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
   }
 }
 
